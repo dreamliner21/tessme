@@ -1,10 +1,16 @@
 body {
-    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    background: linear-gradient(135deg, #ffafbd 0%, #ffc3a0 100%); /* Background gradien pink lembut */
     font-family: 'Poppins', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive; /* Atau 'Great Vibes' jika kamu memilih font itu */
+    font-size: 2rem; /* Sesuaikan ukuran font jika perlu */
+    color: #333; /* Warna teks */
 }
 
 /* Card styling */
@@ -47,20 +53,20 @@ body {
 
 .icon {
     font-size: 24px;
-    color: #666;
+    color: #999;
     margin: 0 10px;
     transition: color 0.3s, transform 0.3s;
 }
 
 .icon:hover {
-    color: #007bff;
+    color: #ff69b4; /* Warna hover pink */
     transform: translateY(-5px);
 }
 
-/* Styling untuk card creator */
+/* Styling khusus untuk card creator */
 .creator-card {
-    background-color: #f7f7f7;
-    border: 2px solid #ff5722;
+    background-color: #ffe4e1; /* Latar belakang pink muda */
+    border: 2px solid #ff1493; /* Border pink lebih gelap */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -78,19 +84,19 @@ body {
 }
 
 .creator-card .card-body {
-    background-color: #fff3e0;
+    background-color: #ffe4f0; /* Latar belakang body card yang lebih lembut */
 }
 
 .creator-card .card-title {
-    color: #ff5722;
+    color: #ff1493; /* Warna teks judul pink */
 }
 
 .creator-card .icon {
-    color: #ff5722;
+    color: #ff69b4; /* Warna icon pink */
 }
 
 .creator-card .icon:hover {
-    color: #e64a19;
+    color: #ff1493; /* Warna icon saat hover */
 }
 
 /* Keyframes untuk animasi floating */
@@ -114,6 +120,30 @@ body {
     100% {
         transform: rotate(360deg);
     }
+}
+
+/* Mengatur ikon controller */
+.icon-controller {
+    background-color: transparent; /* Background transparan */
+    border: none; /* Menghilangkan border */
+    padding: 10px;
+    border-radius: 50%; /* Membuat lingkaran */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi halus */
+}
+
+.icon-controller:hover {
+    background-color: transparent !important; /* Pastikan background tetap transparan saat hover */
+    box-shadow: none; /* Menghilangkan bayangan jika ada */
+    transform: scale(1.1); /* Tambahkan sedikit zoom saat hover */
+}
+
+.icon-controller i {
+    color: #333; /* Warna default ikon */
+    transition: color 0.3s ease; /* Transisi warna */
+}
+
+.icon-controller:hover i {
+    color: #ff69b4; /* Warna pink saat hover */
 }
 
 /* Responsif */
